@@ -2,14 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная: Device</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
   </head>
   <body>
     <header class="main-header">
       <div class="header-nav">
-        <p class="header-logo"><a class="main-logo"><img src="" width="164" height="36" alt="Интернет-магазин «Device»"></a></p>
+        <p class="header-logo"><a class="main-logo"><img src="/images/logo-device-black.png" width="164" height="36" alt="Интернет-магазин «Device»"></a></p>
         <form method="get" action="https://echo.htmlacademy.ru">
           <label class="visually-hidden" for="search">Поиск</label>
           <input class="search" id="search" type="search" name="search" placeholder="Поиск по сайту">
@@ -24,11 +25,11 @@
       <nav class="site-navigation">
         <ul class="hidden">
           <!--сыль неа катлог-->
-          <li><a href="">Каталог товаров</a></li>
+          <li><a href="catalog.html">Каталог товаров</a></li>
           <li class="sub-navigation-box">
             <ul class="sub-navigation-one">
               <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="">Моноподы для селфи</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
               <li><a href="#">Экшн-камеры</a></li>
             </ul>
             <ul class="sub-navigation-two">
@@ -131,27 +132,49 @@
         <h2 class="visually-hidden">Список категорий товаров</h2>
         <ul class="category-list">
           <!--link to href-->
-          <li class="category-item"><a href=""><span>Виртуальная реальность</span></a></li>
-          <li class="category-item"><a href=""><span>Моноподы для селфи</span></a></li>
-          <li class="category-item"><a href=""><span>Экшн-камеры</span></a></li>
-          <li class="category-item"><a href=""><span>Фитнес-браслеты</span></a></li>
-          <li class="category-item"><a href=""><span>Умные часы</span></a></li>
-          <li class="category-item"><a href=""><span>Квадрокоптеры</span></a></li>
+          <li class="category-item vr"><a href="#"><span>Виртуальная реальность</span></a></li>
+          <li class="category-item monopod"><a href="#"><span>Моноподы для селфи</span></a></li>
+          <li class="category-item action-camera"><a href="#"><span>Экшн-камеры</span></a></li>
+          <li class="category-item fitnes"><a href="#"><span>Фитнес-браслеты</span></a></li>
+          <li class="category-item smart-whatch"><a href="#"><span>Умные часы</span></a></li>
+          <li class="category-item copter"><a href="#"><span>Квадрокоптеры</span></a></li>
         </ul>
       </section>
       <section class="service">
-        <h2 class="visually-hidden"> дополнительные услуги</h2>
+        <h2 class="visually-hidden"> Дополнительные  услуг</h2>
         <div class="service-box">
           <ul class="service-list">
             <!--link to href-->
-            <li><a class="tab active" href="">Доставка</a></li>
-            <li><a class="tab unactive" href="">Гарантия</a></li>
-            <li><a class="tab unactive" href="">Кредит</a></li>
+            <li><a class="button current-on" href="#tab-1">Доставка</a></li>
+            <li><a class="button current-of" href="#tab-2">Гарантия</a></li>
+            <li><a class="button current-of" href="#tab-3">Кредит</a></li>
           </ul>
+          <ul class="descript-list">
+            <li class="descript-item descript-one descript-item-current" id="tab-1">
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                <a class="delivery-img"> <img src="/images/illustration-delivery 1.png" alt="Доставка"> </a>
+            </li>
+            <li class="descript-item descript-two visually-hidden" id="tab-2">
+              <h3>Гарантия</h3>
+              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте,
+                мы выдадим вам новый<br>Товар, не дом, конечно же.</p>
+                <a class="delivery-img"> <img src="/images/illustration-warranty 1.png" alt="Гарантия"> </a>
+            </li>
+            <li class="descript-item descript-three visually-hidden" id="tab-3">
+              <h3>Кредит</h3>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
+                Выгодные для нашего банка, разумеется.</p>
+                <a class="delivery-img"> <img src="/images/illustration-credit 1.png" alt="Кредит"> </a>
+            </li>
+          </ul>
+        </div>
       </section>
+
       <section class="company section-box">
           <div class="rare-delivery">
-            <img class="delivery-img" width="125" height="100" src="" alt=""><p class="">Доставим редкий товар под заказ</p>
+            <img class="delivery-img" width="" height="" src="/images/delivery-truck.png" alt=""><p class="">Доставим редкий товар под заказ</p>
             <!-- серый декоративный круг-->
           <div class="decor-round-grey"></div>
           </div>
@@ -173,18 +196,29 @@
           <a class="button popupfeedback" href="">Напишите нам</a>
         </section>
       </section>
+      <section class="subscrube">
+        <h2 class="visually-hidden">Подписка на рассылку интернет-магазина "Device"</h2>
+          <div class="subscrube-info">
+            <h3>Подпишитесь на рассылку</h3><p>Еженедельный дайджест с обзорами новинок,
+          длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          </div>
+          <div>
+            <form method="get" action="https://echo.htmlacademy.ru">
+              <label class="visually-hidden" for="subscrube">Подписка</label>
+              <input class="search" id="subscrube" type="text" name="subscrube" placeholder="Ваш e-mail">
+              <button class="subscrube-button" type="submit">Подписаться</button>
+            </form>
+
+          </div>
+
+      </section>
     </main>
     <footer ter class="main-footer">
       <div>
         <!--не забыть прикрутить сыль на имг  -->
         <div class="main-footer-logo">
-          <a class="main-logo"><img src="" width="145" height="36" alt="Интернет-магазин «Device»"></a>
+          <a class="main-logo"><img src="/images/device.png" width="145" height="36" alt="Интернет-магазин «Device»"></a>
         </div>
-        <ul class="user-navigation-footer">
-          <li><a class="login" href="#">Войти</a></li>
-          <li><a class="compare" href="#">Сравнить</a></li>
-          <li><a class="cart" href="#">Корзина</a></li>
-        </ul>
       </div>
       <div>
         <address class="contact">Санкт-Петербург, набережная
@@ -206,7 +240,7 @@
         </ul>
         <div class="copyright">
           <!--не забыть прикрутить сыль на имг  -->
-          <a href="https://htmlacademy.ru/"><img src="" width="115" height="34" alt="HTML Academy"></a>
+          <a href="https://htmlacademy.ru/"><img src="/images/Html-logo.png" width="115" height="34" alt="HTML Academy"></a>
         </div>
       </div>
     </footer>
