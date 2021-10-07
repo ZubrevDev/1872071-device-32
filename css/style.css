@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/rubik/rubik-800.woff2") format("woff2");
+  font-display: swap;
+}
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "rubik", Arial, sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+}
+h2 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+.filter h3 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+}
+.sorting span {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+}
+h3 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+.main-header {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.main-logo {
+  position: absolute;
+  top: -20px;
+  left: 60px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.header-nav {
+  position: relative;
+  margin-top: 40px;
+  padding-top: 35px;
+  padding-right: 60px;
+  padding-left: 60px;
+  background-color: #f7e296;
+}
+
+.rare-delivery {
+  width: 1160px;
+  height: 100px;
+  background-color: #f0f0f0;
+}
+.subscrube {
+  background-color: #f0f0f0;
+}
+
+.main-footer {
+  background-color: #444444;
+}
+
+.service {
+  background-color: #444444;
+}
+.user-nav {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+.site-navigation {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
