@@ -13,39 +13,44 @@
 <body>
   <header class="main-header">
     <div class="header-nav">
+      <div class="top-part">
       <a class="main-logo"><img height:"144.9" width:"36" src="/images/logo-device-black.svg" width="164" height="36"
           alt="Интернет-магазин «Device»"></a>
-      <form method="get" action="https://echo.htmlacademy.ru">
-        <label class="visually-hidden" for="search">Поиск</label>
-        <input class="search" id="search" type="search" name="search" placeholder="Поиск по сайту" />
-        <button class="search-button" type="submit">Найти</button>
+      <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
+
+        <label class="search-form-icon visually-hidden" for="search">Поиск</label>
+        <input class="search " id="search" type="search" name="search" placeholder="Поиск по сайту" />
+        <button class="search-button visually-hidden" type="submit">Найти</button>
       </form>
-      <ul class="user-nav">
-        <li><a class="login" href="#">Войти</a></li>
-        <li><a class="compare" href="#">Сравнить</a></li>
-        <li><a class="cart" href="#">Корзина</a></li>
-      </ul>
+
+        <a class="login" href="#">Войти</a>
+        <a class="compare" href="#">Сравнить</a>
+        <a class="cart" href="#">Корзина</a>
+
+      </div>
+      <nav class="site-navigation">
+        <a class="navigation-catalog site-navigation-item" href="catalog.html">Каталог товаров</a>
+        <ul class=" sub-menu">
+          <li class="sub-item"><a href="#">Виртуальная реальность</a></li>
+          <li><a href="#">Моноподы для селфи</a></li>
+          <li><a href="#">Экшн-камеры</a></li>
+          <li><a href="#">Фитнесс-браслеты</a></li>
+          <li><a href="#">Умные часы</a></li>
+          <li><a href="#">Квадрокоптеры</a></li>
+        </ul>
+        <ul class="site-navigation-header">
+          <li><a class="delivery-menu"href="#">Доставка</a></li>
+          <li class="garant-menu" ><a  href="#">Гарантия</a></li>
+          <li class="kontakt-menu"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="site-navigation">
-      <ul class="site-navigation-header">
-        <li><a href="catalog.html">Каталог товаров</a></li>
-        <li><a href="#">Виртуальная реальность</a></li>
-        <li><a href="#">Моноподы для селфи</a></li>
-        <li><a href="#">Экшн-камеры</a></li>
-        <li><a href="#">Фитнесс-браслеты</a></li>
-        <li><a href="#">Умные часы</a></li>
-        <li><a href="#">Квадрокоптеры</a></li>
-      </ul>
-      <ul class="site-navigation-header">
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </nav>
+
   </header>
   <main class="container">
     <h1 class="visually-hidden">Интернет-магазин «Device»</h1>
     <section class="promo">
+      <div class="container-padding ">
       <h2 class="visually-hidden">Анонс новых товаров</h2>
       <input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked />
       <input class="visually-hidden" type="radio" id="btn-2" name="toggle" />
@@ -76,7 +81,6 @@
             </table>
           </div>
           <div class="promo-picture">
-            <!--link to img-->
             <img src="/images/slider-1.png" width="560" height="560" alt="Квадрокоптер с мощным лазером" />
           </div>
         </li>
@@ -128,6 +132,7 @@
           </div>
         </li>
       </ul>
+    </div>
     </section>
     <section class="category section-box">
       <h2 class="visually-hidden">Список категорий товаров</h2>
@@ -186,10 +191,10 @@
         </li>
       </ul>
     </section>
-    <section class="service">
+    <section class="service ">
       <h2 class="visually-hidden">Дополнительные услуг</h2>
-      <div class="service-box">
-        <ul class="service-list">
+      <div class="service-box ">
+        <ul class="service-list ">
           <!--link to href-->
           <li><a class="button current-on" href="#tab-1">Доставка</a></li>
           <li><a class="button current-of" href="#tab-2">Гарантия</a></li>
@@ -231,6 +236,7 @@
           </li>
         </ul>
       </div>
+
     </section>
 
     <section class="company section-box">
@@ -260,16 +266,19 @@
         </ul>
         <a class="button" href="#">Подробнее о нас</a>
       </section>
-      <section class="contacts-company">
+      <div class="contacts-company">
         <h3>Контакты</h3>
         <p>
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.
         </p>
         <a class="button popupfeedback" href="">Напишите нам</a>
-      </section>
+      </div>
     </section>
-    <section class="subscrube">
+
+    <section class="subscrube container-padding">
+      <div class="">
+
       <h2 class="visually-hidden">
         Подписка на рассылку интернет-магазина "Device"
       </h2>
@@ -287,14 +296,14 @@
           <button class="subscrube-button" type="submit">Подписаться</button>
         </form>
       </div>
+    </div>
     </section>
   </main>
+
   <footer class="main-footer">
-    <!--не забыть прикрутить сыль на имг  -->
-    <div class="main-footer-logo">
+    <div class="container-padding">
       <a class="footer-logo"><img src="/images/device-yellow.svg" width="145" height="36"
           alt="Интернет-магазин «Device»" /></a>
-    </div>
     <div>
       <address class="contact">
         Санкт-Петербург, набережная реки Карповки, 5, литера П.
@@ -306,7 +315,7 @@
       </ul>
       <a class="contact" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
     </div>
-    <div>
+    <div class="">
       <ul class="social">
         <li>
           <a class="social-facebook" href="#"><span class="visually-hidden">Вконтакте</span></a>
@@ -322,6 +331,7 @@
       <a href="https://htmlacademy.ru/"><img src="/images/html-logo.svg" width="115" height="34"
           alt="HTML Academy" ></a>
     </div>
+  </div>
   </footer>
 </body>
 
