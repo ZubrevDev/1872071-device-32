@@ -14,23 +14,23 @@
   <header class="main-header">
     <div class="header-nav">
       <div class="top-part">
-      <a class="main-logo"><img height:"144.9" width:"36" src="/images/logo-device-black.svg" width="164" height="36"
-          alt="Интернет-магазин «Device»"></a>
-      <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
+        <a class="main-logo"><img src="/images/logo-device-black.svg" width="164" height="36"
+            alt="Интернет-магазин «Device»"></a>
+        <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
 
-        <label class="search-form-icon visually-hidden" for="search">Поиск</label>
-        <input class="search " id="search" type="search" name="search" placeholder="Поиск по сайту" />
-        <button class="search-button visually-hidden" type="submit">Найти</button>
-      </form>
+          <label class="search-form-icon visually-hidden" for="search">Поиск</label>
+          <input class="search " id="search" type="search" name="search" placeholder="Поиск по сайту" />
+          <button class="search-button visually-hidden" type="submit">Найти</button>
+        </form>
 
-        <a class="login" href="#">Войти</a>
-        <a class="compare" href="#">Сравнить</a>
-        <a class="cart" href="#">Корзина</a>
+        <a class="none-decoration login" href="#">Войти</a>
+        <a class="none-decoration compare" href="#">Сравнить</a>
+        <a class="none-decorationcart" href="#">Корзина</a>
 
       </div>
       <nav class="site-navigation">
-        <a class="navigation-catalog site-navigation-item" href="catalog.html">Каталог товаров</a>
-        <ul class=" sub-menu">
+        <a class="none-decoration navigation-catalog site-navigation-item" href="catalog.html">Каталог товаров</a>
+        <ul class=" sub-menu reset-list ">
           <li class="sub-item"><a href="#">Виртуальная реальность</a></li>
           <li><a href="#">Моноподы для селфи</a></li>
           <li><a href="#">Экшн-камеры</a></li>
@@ -38,21 +38,19 @@
           <li><a href="#">Умные часы</a></li>
           <li><a href="#">Квадрокоптеры</a></li>
         </ul>
-        <ul class="site-navigation-header">
-          <li><a class="delivery-menu"href="#">Доставка</a></li>
-          <li class="garant-menu" ><a  href="#">Гарантия</a></li>
+        <ul class="site-navigation-header reset-list">
+          <li><a class="none-decoration delivery-menu" href="#">Доставка</a></li>
+          <li class="garant-menu"><a href="#">Гарантия</a></li>
           <li class="kontakt-menu"><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </div>
-
   </header>
 
-
-  <main class="container  ">
-    <div class="container-padding ">
+  <main class="container-main">
+    <div class="container-padding">
       <h1 class="catalog-title ">Моноподы для селфи</h1>
-      <ul class="breadcrumbs ">
+      <ul class="breadcrumbs reset-list">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог товаров</a></li>
         <li><a href="#">Моноподы для селфи</a></li>
@@ -80,7 +78,7 @@
           </fieldset>
           <fieldset class="filter-color">
             <legend class="legend-count">Цвет</legend>
-            <ul class="reset-list">
+            <ul class="reset-list reset-list">
               <li class="filter-option">
                 <input class="filter-input filter-input-checkbox" type="checkbox" name="black" id="filter-black"
                   checked />
@@ -128,9 +126,9 @@
         <section class="sorting">
           <span class="sorting-title">Сортировка:</span>
           <div class="sorting-mark">
-            <a class="sorting-active" href="#">Сначала популярные</a>
-            <a href="#">По типу</a>
-            <a href="#">По популярности</a>
+            <a class="none-decoration sorting-active sorting-a" href="#">Сначала популярные</a>
+            <a class="none sorting-a" href="#">По типу</a>
+            <a class="none sorting-a" href="#">По популярности</a>
           </div>
           <div class="sorting-directions">
             <a class="increase" href="#"><span class="visually-hidden">По возрастанию</span></a>
@@ -141,7 +139,8 @@
         <ul class="cart-list reset-list">
           <li class="cart-item">
             <a class="cart-item-img" href="#">
-              <img class="cart-item-img" src="images/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка" />
+              <img class="cart-item-img" src="images/product-1.jpg" width="360" height="380"
+                alt="Любительская селфи-палка" />
             </a>
             <a class="cart-item-title" href="#">Любительская селфи-палка</a>
             <span class="cart-item-cost">500 ₽.</span>
@@ -171,9 +170,9 @@
             <span class="cart-item-cost">4 900 ₽.</span>
           </li>
         </ul>
-         <!--Кнопка загрузить еще-->
         <div class="laoad-more-btn">
-          <p class="load-more-text">Загрузить еще</p></div>
+          <p class="load-more-text">Загрузить еще</p>
+        </div>
         <ul class="pagination-list reset-list">
           <li><a class="pagination-item_previous" href="#">Назад</a></li>
           <li><a class="pagination-item pagination-item-current">1</a></li>
@@ -188,34 +187,35 @@
     <div class="container-padding">
       <a class="footer-logo"><img src="/images/device-yellow.svg" width="145" height="36"
           alt="Интернет-магазин «Device»" /></a>
-    <div>
-      <address class="contact">
-        Санкт-Петербург, набережная реки Карповки, 5, литера П.
-      </address>
-      <ul class="site-navigation site-navigation-footer">
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <a class="contact" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+      <div>
+        <address class="contact">
+          Санкт-Петербург, набережная реки Карповки, 5, литера П.
+        </address>
+        <ul class="site-navigation site-navigation-footer reset-list">
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <a class="contsact" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+      </div>
+      <div class="">
+        <ul class="social reset-list">
+          <li>
+            <a class="social-facebook" href="#"><span class="visually-hidden">Вконтакте</span></a>
+          </li>
+          <li>
+            <a class="social-instagram" href="#"><span class="visually-hidden">Фейсбук</span></a>
+          </li>
+          <li>
+            <a class="social-twitter" href="#"><span class="visually-hidden">Инстаграм</span></a>
+          </li>
+        </ul>
+        <a href="https://htmlacademy.ru/"><img src="/images/html-logo.svg" width="115" height="34"
+            alt="HTML Academy"></a>
+      </div>
     </div>
-    <div class="">
-      <ul class="social">
-        <li>
-          <a class="social-facebook" href="#"><span class="visually-hidden">Вконтакте</span></a>
-        </li>
-        <li>
-          <a class="social-instagram" href="#"><span class="visually-hidden">Фейсбук</span></a>
-        </li>
-        <li>
-          <a class="social-twitter" href="#"><span class="visually-hidden">Инстаграм</span></a>
-        </li>
-      </ul>
-
-      <a href="https://htmlacademy.ru/"><img src="/images/html-logo.svg" width="115" height="34"
-          alt="HTML Academy" ></a>
     </div>
-  </div>
   </footer>
 </body>
+
 </html>
