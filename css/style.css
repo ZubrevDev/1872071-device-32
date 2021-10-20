@@ -218,9 +218,11 @@ body {
 .garant-menu {
   margin-left: 19px;
 }
+
 .kontakt-menu {
   margin-left: 62px;
 }
+
 .sub-menu {
   position: absolute;
   top: 20px;
@@ -283,20 +285,6 @@ body {
   padding-top: 5px;
   margin-right: auto;
 }
-
-
-
-
-
-.footer-menu:hover,
-.footer-menu:focus {
-  color: #ffffff;
-}
-
-.footer-menu:focus {
-  color: rgba(255, 255, 255, 0.3);
-}
-
 
 .footer-input {
   padding-left: 27px;
@@ -370,15 +358,6 @@ body {
 
 .social-item {
   opacity: 0.3;
-}
-
-.social-item:hover,
-.social-item:focus {
-  opacity: 0.6;
-}
-
-.social-item:active {
-  opacity: 0.1;
 }
 
 .acdemylogo {
@@ -561,7 +540,7 @@ body {
   margin-bottom: 42px;
 }
 
-.hover{
+.hover {
   margin-right: 35px;
   color: rgba(0, 0, 0, 0.3);
 }
@@ -726,7 +705,6 @@ body {
 .pagination-item-current {
   color: #000000;
 }
-
 
 .heading-h3 {
   font-family: Raleway;
