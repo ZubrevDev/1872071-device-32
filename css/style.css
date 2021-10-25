@@ -218,11 +218,9 @@ body {
 .garant-menu {
   margin-left: 19px;
 }
-
 .kontakt-menu {
   margin-left: 62px;
 }
-
 .sub-menu {
   position: absolute;
   top: 20px;
@@ -245,11 +243,11 @@ body {
 .navigation-catalog::after {
   position: absolute;
   content: "";
-  top: 5px;
+  top: -15px;
   left: 230px;
   width: 50px;
-  height: 16px;
-  background-image: url(../img/plus.svg);
+  height: 50px;
+  background-image: url(../images/plus.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
   opacity: 0.3;
@@ -285,6 +283,20 @@ body {
   padding-top: 5px;
   margin-right: auto;
 }
+
+
+
+
+
+.footer-menu:hover,
+.footer-menu:focus {
+  color: #ffffff;
+}
+
+.footer-menu:focus {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 .footer-input {
   padding-left: 27px;
@@ -360,6 +372,15 @@ body {
   opacity: 0.3;
 }
 
+.social-item:hover,
+.social-item:focus {
+  opacity: 0.6;
+}
+
+.social-item:active {
+  opacity: 0.1;
+}
+
 .acdemylogo {
   margin-left: auto;
 }
@@ -394,18 +415,7 @@ body {
   position: relative;
   display: flex;
 }
-.navigation-catalog::after {
-  position: absolute;
-  content: "";
-  top: 5px;
-  left: 230px;
-  width: 16px;
-  height: 16px;
-  background-image: url(../images/plus.svg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  opacity: 0.3;
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -466,10 +476,7 @@ body {
   margin-bottom: 30px;
   background-color: #ffe17f;
 }
-.products-item-monopod {
-  justify-content: flex-end;
-}
-.products-item-image {
+.products-item-monopod .products-item-image {
   justify-content: flex-end;
 }
 /* catalog main  */
@@ -495,7 +502,7 @@ body {
   background-color: #efefef;
 }
 
-.title-filter {
+.filter h3 {
   box-sizing: border-box;
   align-self: stretch;
   margin: 0;
@@ -538,16 +545,14 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 42px;
+  margin-left: 60px;
 }
 
-.hover {
+.breadcrumbs a {
   margin-right: 35px;
   color: rgba(0, 0, 0, 0.3);
 }
 
-.limodding:first-child {
-  margin-left: 60px;
-}
 
 .hover:hover,
 .hover:focus {
@@ -562,7 +567,7 @@ body {
   position: relative;
 }
 
-.breadcrumbs li:not(:last-child)::after {
+.breadcrumbs li::after {
   content: url(/images/arow-crumbs.svg);
   position: absolute;
   right: 17px;
@@ -705,6 +710,7 @@ body {
 .pagination-item-current {
   color: #000000;
 }
+
 
 .heading-h3 {
   font-family: Raleway;
