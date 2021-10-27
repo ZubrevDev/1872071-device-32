@@ -17,33 +17,40 @@
         <a class="main-logo"><img src="/images/logo-device-black.svg" width="164" height="36"
             alt="Интернет-магазин «Device»"></a>
         <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
-
           <label class="search-form-icon visually-hidden" for="search">Поиск</label>
           <input class="search " id="search" type="search" name="search" placeholder="Поиск по сайту" />
           <button class="search-button visually-hidden" type="submit">Найти</button>
         </form>
-
         <a class="link login" href="#">Войти</a>
         <a class="link compare" href="#">Сравнить</a>
         <a class="link cart" href="#">Корзина</a>
-
       </div>
-      <nav class="site-navigation">
-        <a class="link navigation-catalog site-navigation-item" href="catalog.html">Каталог товаров</a>
-        <ul class=" sub-menu reset-list ">
-          <li class="sub-item"><a class="link" href="#">Виртуальная реальность</a></li>
-          <li><a class="link" href="#">Моноподы для селфи</a></li>
-          <li><a class="link" href="#">Экшн-камеры</a></li>
-          <li><a class="link" href="#">Фитнесс-браслеты</a></li>
-          <li><a class="link" href="#">Умные часы</a></li>
-          <li><a class="link" href="#">Квадрокоптеры</a></li>
-        </ul>
-        <ul class="site-navigation-header reset-list">
-          <li class="delivery-menu"><a class="link" href="#">Доставка</a></li>
-          <li class="garant-menu"><a class="link" href="#">Гарантия</a></li>
-          <li class="kontakt-menu"><a class="link" href="#">Контакты</a></li>
-        </ul>
-      </nav>
+        <nav class="main-navigation">
+          <ul class="site-navigation reset-list">
+            <li><a class="link site-navigation-item navigation-catalog" href="catalog.html">Каталог товаров</a>
+              <ul class="sub-menu reset-list">
+                <ul class="sub-column reset-list">
+                    <div class="first-row">
+                      <li><a class="link sub-item" href="#">Виртуальная реальность</a></li>
+                      <li><a class="link sub-item" href="#">Моноподы для селфи</a></li>
+                      <li><a class="link sub-item" href="#">Экшн-камеры</a></li>
+                    </div>
+                    <div class="second-row">
+                      <li><a class="link sub-item" href="#">Фитнес-браслеты</a></li>
+                      <li><a class="link sub-item" href="#">Умные часы</a></li>
+                    </div>
+                    <div class="thrid-row">
+                      <li><a class="link sub-item" href="#">Квадрокоптеры</a></li>
+                    </div>
+                </ul>
+              </ul>
+            </li>
+            <ul class="second-psrt-menu reset-list">
+              <li><a class="link item-position site-navigation-item navigation-delivery" href="#">Доставка</a></li>
+              <li><a class="link site-navigation-item navigation-guarantee" href="#">Гарантия</a></li>
+              <li><a class="link site-navigation-item navigation-contacts" href="#">Контакты</a></li>
+            </ul>
+        </nav>
     </div>
   </header>
 
@@ -60,7 +67,7 @@
       <section class="filter">
         <h3 class="filter-area title-filter">Фильтр:</h3>
         <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="noborder filter-count">
+          <fieldset class="filter-count noborder">
             <legend>Стоимость</legend>
             <div class="price-filter">
               <div class="price-controls">
@@ -76,7 +83,7 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="filter-color">
+          <fieldset class="filter-color noborder">
             <legend class="legend-count">Цвет</legend>
             <ul class="reset-list reset-list">
               <li class="filter-option">
@@ -103,7 +110,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter-bluetooth">
+          <fieldset class="filter-bluetooth noborder ">
             <legend class="legend-bluetooth">Bluetooth</legend>
             <ul class="reset-list">
               <li class="filter-option">

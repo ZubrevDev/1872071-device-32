@@ -15,40 +15,45 @@
     <div class="header-nav">
       <div class="top-part">
         <a class="main-logo"><img src="/images/logo-device-black.svg" width="164" height="36"
-            alt="Интернет-магазин «Device»" /></a>
+            alt="Интернет-магазин «Device»"></a>
         <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
           <label class="search-form-icon visually-hidden" for="search">Поиск</label>
-          <input class="search" id="search" type="search" name="search" placeholder="Поиск по сайту" />
-          <button class="search-button visually-hidden" type="submit">
-            Найти
-          </button>
+          <input class="search " id="search" type="search" name="search" placeholder="Поиск по сайту" />
+          <button class="search-button visually-hidden" type="submit">Найти</button>
         </form>
-
         <a class="link login" href="#">Войти</a>
         <a class="link compare" href="#">Сравнить</a>
         <a class="link cart" href="#">Корзина</a>
       </div>
-      <nav class="site-navigation">
-        <a class="link navigation-catalog site-navigation-item" href="catalog.html">Каталог товаров</a>
-        <ul class="sub-menu reset-list">
-          <li class="sub-item">
-            <a class="link" href="#">Виртуальная реальность</a>
-          </li>
-          <li><a class="link" href="#">Моноподы для селфи</a></li>
-          <li><a class="link" href="#">Экшн-камеры</a></li>
-          <li><a class="link" href="#">Фитнесс-браслеты</a></li>
-          <li><a class="link" href="#">Умные часы</a></li>
-          <li><a class="link" href="#">Квадрокоптеры</a></li>
-        </ul>
-        <ul class="site-navigation-header reset-list">
-          <li class="delivery-menu"><a class="link" href="#">Доставка</a></li>
-          <li class="garant-menu"><a class="link" href="#">Гарантия</a></li>
-          <li class="kontakt-menu"><a class="link" href="#">Контакты</a></li>
-        </ul>
-      </nav>
+        <nav class="main-navigation">
+          <ul class="site-navigation reset-list">
+            <li><a class="link site-navigation-item navigation-catalog" href="catalog.html">Каталог товаров</a>
+              <ul class="sub-menu reset-list">
+                <ul class="sub-column reset-list">
+                    <div class="first-row">
+                      <li><a class="link sub-item" href="#">Виртуальная реальность</a></li>
+                      <li><a class="link sub-item" href="#">Моноподы для селфи</a></li>
+                      <li><a class="link sub-item" href="#">Экшн-камеры</a></li>
+                    </div>
+                    <div class="second-row">
+                      <li><a class="link sub-item" href="#">Фитнес-браслеты</a></li>
+                      <li><a class="link sub-item" href="#">Умные часы</a></li>
+                    </div>
+                    <div class="thrid-row">
+                      <li><a class="link sub-item" href="#">Квадрокоптеры</a></li>
+                    </div>
+
+                </ul>
+              </ul>
+            </li>
+            <ul class="second-psrt-menu reset-list">
+              <li><a class="link item-position site-navigation-item navigation-delivery" href="#">Доставка</a></li>
+              <li><a class="link site-navigation-item navigation-guarantee" href="#">Гарантия</a></li>
+              <li><a class="link site-navigation-item navigation-contacts" href="#">Контакты</a></li>
+            </ul>
+        </nav>
     </div>
   </header>
-
   <main class="container-main">
     <h1 class="visually-hidden">Интернет-магазин «Device»</h1>
     <section class="promo">
@@ -185,7 +190,6 @@
             <h3 class="category-item-title">Умные часы</h3>
           </a>
         </li>
-
         <li class="category-item copter">
           <a class="link products-item" href="#">
             <div class="products-item-image">
@@ -196,96 +200,91 @@
         </li>
       </ul>
     </section>
+
     <section class="service">
-      <h2 class="visually-hidden">Дополнительные услуг</h2>
-      <div class="service-box">
-        <ul class="service-list reset-list">
-          <!--link to href-->
-          <li>
-            <a class="link button current-on" href="#tab-1">Доставка</a>
-          </li>
-          <li>
-            <a class="link button current-of" href="#tab-2">Гарантия</a>
-          </li>
-          <li><a class="link button current-of" href="#tab-3">Кредит</a></li>
-        </ul>
-        <ul class="descript-list reset-list">
-          <li class="descript-item descript-one descript-item-current" id="tab-1">
-            <h3>Доставка</h3>
-            <p>
-              Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-              совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
-              на ваш этаж.
-            </p>
-            <a class="link delivery-img">
-              <img src="/images/delivery.svg" alt="Доставка" />
-            </a>
-          </li>
-          <li class="descript-item descript-two visually-hidden" id="tab-2">
-            <h3>Гарантия</h3>
-            <p>
-              Если из-за возгорания купленного у нас товара у вас сгорит дом —
-              не переживайте, мы выдадим вам новый<br />Товар, не дом, конечно
-              же.
-            </p>
-            <a class="delivery-img">
-              <img src="/images/warranty.svg" alt="Гарантия" />
-            </a>
-          </li>
-          <li class="descript-item descript-three visually-hidden" id="tab-3">
-            <h3>Кредит</h3>
-            <p>
-              Залезть в долговую яму стало проще! Кредитные консультанты
-              подберут для вас наиболее выгодные условия кредита. Выгодные для
-              нашего банка, разумеется.
-            </p>
-            <a class="delivery-img">
-              <img src="/images/credit.svg" alt="Кредит" />
-            </a>
-          </li>
-        </ul>
+      <div class="container-padding">
+        <h2 class="visually-hidden">Сервисы</h2>
+        <div class="index-column container">
+          <input class="visually-hidden" type="radio" id="s-btn-1" name="service" checked>
+          <input class="visually-hidden" type="radio" id="s-btn-2" name="service">
+          <input class="visually-hidden" type="radio" id="s-btn-3" name="service">
+          <ul class="service-menu reset-list">
+            <li>
+              <label class="service-menu-item" for="s-btn-1">Доставка</label>
+            </li>
+            <li>
+              <label class="service-menu-item" for="s-btn-2">Гарантия</label>
+            </li>
+            <li>
+              <label class="service-menu-item" for="s-btn-3">Кредит</label>
+            </li>
+          </ul>
+          <div class="service-list">
+            <div class="service-item service-item-1">
+              <h3 class="title-heading">Доставка</h3>
+              <p class="service-item-p">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+                совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
+                на ваш этаж.</p>
+            </div>
+            <div class="service-item service-item-2">
+              <h3 class="title-heading">Гарантия</h3>
+              <p class="service-item-p">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте,
+                мы выдадим вам новый.</p>
+              <p class="service-item-p">Товар, не дом, конечно же.</p>
+            </div>
+            <div class="service-item service-item-3">
+              <h3 class="title-heading">Кредит</h3>
+              <p class="service-item-p">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+                наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="company section-box">
+    <section class="container-padding delivery">
       <div class="rare-delivery">
-        <img class="delivery-img" width="" height="" src="/images/delivery-truck.svg" alt="" />
-        <p class="">Доставим редкий товар под заказ</p>
-        <!-- серый декоративный круг-->
-        <div class="decor-round-grey"></div>
-      </div>
-      <h2 class="visually-hidden">
-        Информация об интернет-магазине «Device»
-      </h2>
-      <section class="about-company">
-        <h3>О нас</h3>
-        <p>
-          Огромный выбор гаджетов не оставит равнодушным гика, который есть в
-          каждом из нас.
-        </p>
-        <p>
-          Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE
-          работает со многими транспортными компаниями:
-        </p>
-        <ul class="reset-list">
-          <li>Деловые Линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭспедиция</li>
-        </ul>
-        <a class="link button" href="#">Подробнее о нас</a>
-      </section>
-      <div class="contacts-company">
-        <h3>Контакты</h3>
-        <p>
-          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
-          проверить работоспособность покупки. Всякое бывает.
-        </p>
-        <a class="link button popupfeedback" href="">Напишите нам</a>
+        <div v class="deliveryimage"><img class="delivery-img" width="47px" height="31px"
+            src="/images/delivery-truck.svg" alt="" />
+        </div>
+        <div><a class="link" href="#">
+            <h3 class="delivery-heading " href="#">Доставим редкий товар под заказ</h3>
+          </a></div>
+        <div class="decorpart"><img class="delivery-img" width="auto" height="12px" src="/images/info.svg " alt="" />
+        </div>
       </div>
     </section>
+    <div class="index-column container-padding">
+      <section class="about-us">
+        <h2 class="title-about-us">О нас</h2>
+        <p class="first-p">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="second-p">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+        <ul class="trans-comp reset-list">
+          <li class="yellow-dot">Меловые линии</li>
+          <li class="yellow-dot">СДИК</li>
+          <li class="yellow-dot">ТоксБерри</li>
+        </ul>
+        <a class="btn link" href="#">Подробнее о нас</a>
+      </section>
+      <section class="contacts">
+        <h2 class="title-contacts">Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис.
+          Заодно сможете проверить работоспособность покупки. </p>
+        <h4 class="contacts-h4">Интернет-магазин «Девайс»</h4>
+        <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <a class="link contact-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <h4 class="contacts-h4">Время работы</h4>
+        <div class="work-time">
+          <p>пн—пт: с 10:00 до 22:00</p>
+          <p>сб—вс: с 10:00 до 19:00</p>
+        </div>
+        <a class="btnwrite btn-write-us link" href="#">Напишите нам</a>
+      </section>
+    </div>
 
-    <section class="subscrube container-padding">
-      <div class="">
+
+    <section class="subscrube ">
+      <div class="container-padding">
         <h2 class="visually-hidden">
           Подписка на рассылку интернет-магазина "Device"
         </h2>
@@ -297,7 +296,7 @@
             это вот всё.
           </p>
         </div>
-        <div>
+        <div class="">
           <form method="get" action="https://echo.htmlacademy.ru">
             <label class="visually-hidden" for="subscrube">Подписка</label>
             <input class="search" id="subscrube" type="text" name="subscrube" placeholder="Ваш e-mail" />
