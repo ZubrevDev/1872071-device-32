@@ -250,8 +250,6 @@ body {
   align-self: start;
   grid-area: thrid-row;
 }
-
-}
 .sub-item {
   display: block;
   margin-bottom: 10px;
@@ -266,7 +264,6 @@ body {
 .sub-item:focus {
   color: rgba(0, 0, 0, 0.6);
 }
-
 .sub-item:active {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -811,7 +808,7 @@ body {
   font-weight: 700;
 }
 
-.trans-comp .yellow-dot::before {
+.yellow-dot::before {
   content: "";
   position: absolute;
   top: 16px;
@@ -879,7 +876,6 @@ contacts-h4 {
   position: relative;
   top: -74px;
 }
-
 .service-menu {
   position: relative;
   width: 284px;
@@ -888,7 +884,6 @@ contacts-h4 {
   padding: 0;
   padding-top: 5px;
 }
-
 .service-menu::after {
   position: absolute;
   content: "";
@@ -898,7 +893,6 @@ contacts-h4 {
   height: 320px;
   background-color: #000000;
 }
-
 .service-menu-item {
   position: relative;
   display: block;
@@ -932,13 +926,7 @@ contacts-h4 {
 .service-item {
   display: none;
 }
-.service-item h3 {
-  margin-bottom: 30px;
-  font-size: 47px;
-  line-height: 48px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
+
 .service-item-p {
   margin: 0;
   padding: 0;
@@ -967,16 +955,16 @@ contacts-h4 {
   background-position: 560px 0px;
   background-repeat: no-repeat;
 }
-#s-btn-1:checked ~ .service-menu label[for="s-btn-1"],
-#s-btn-2:checked ~ .service-menu label[for="s-btn-2"],
-#s-btn-3:checked ~ .service-menu label[for="s-btn-3"] {
+.btn-1:checked ~ .service-menu label[for="s-btn-1"],
+.btn-2:checked ~ .service-menu label[for="s-btn-2"],
+.btn-3:checked ~ .service-menu label[for="s-btn-3"] {
   padding-right: 124px;
   color: #f7e184;
   background-color: #000000;
 }
-#s-btn-1:checked ~ .service-list .service-item-1,
-#s-btn-2:checked ~ .service-list .service-item-2,
-#s-btn-3:checked ~ .service-list .service-item-3 {
+.btn-1:checked ~ .service-list .service-item-1,
+.btn-2:checked ~ .service-list .service-item-2,
+.btn-3:checked ~ .service-list .service-item-3 {
   display: block;
 }
 .service-menu-item:hover {
