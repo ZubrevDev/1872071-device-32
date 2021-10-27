@@ -267,8 +267,7 @@ body {
 .sub-item:active {
   color: rgba(0, 0, 0, 0.3);
 }
-.site-navigation li:focus .sub-menu,
-.site-navigation li:hover .sub-menu {
+.site-navigation .mamba:hover .sub-menu{
   display: block;
 }
 .navigation-catalog::after {
@@ -926,7 +925,6 @@ contacts-h4 {
 .service-item {
   display: none;
 }
-
 .service-item-p {
   margin: 0;
   padding: 0;
@@ -939,7 +937,6 @@ contacts-h4 {
   background-position: 560px 10px;
   background-repeat: no-repeat;
 }
-
 .service-item-1 service-item-p {
   width: 450px;
 }
