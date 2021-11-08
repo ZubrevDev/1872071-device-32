@@ -7,7 +7,7 @@
   <title>Главная: Device</title>
   <link rel="icon" href="favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
 
 <body>
@@ -119,9 +119,9 @@
   <section class="product-slider page-container">
     <h2 class="visually-hidden">Популярные товары</h2>
 
-    <input type="radio" id="slider-1" name="slider" checked />
-    <input type="radio" id="slider-2" name="slider" />
-    <input type="radio" id="slider-3" name="slider" />
+    <input class="slide1" type="radio" id="slider-1" name="slider" checked />
+    <input class="slide2" type="radio" id="slider-2" name="slider" />
+    <input class="slide3" type="radio" id="slider-3" name="slider" />
 
     <section class="slider-card">
       <h3 class="visually-hidden">Квадракоптер</h3>
@@ -145,9 +145,28 @@
             лазером, замаскированным под стандартную камеру.
           </dd>
         </dl>
-
-        <a class="slider-card__link btn" href="#">Подробнее</a>
-
+        <div class="sliderinfo1">
+          <a class="slider-card__link btn" href="#">Подробнее</a>
+          <div class="product-slider__nav">
+            <ol class="product-slider__pagination">
+              <li class="product-slider__pagination-item">
+                <label class=" checked-paganation product-slider__pagination-btn" for="slider-1" tabindex="0">
+                  <span class="visually-hidden">1 товар</span>
+                </label>
+              </li>
+              <li class="product-slider__pagination-item">
+                <label class="product-slider__pagination-btn" for="slider-2" tabindex="0">
+                  <span class="visually-hidden">2 товар</span>
+                </label>
+              </li>
+              <li class="product-slider__pagination-item">
+                <label class="product-slider__pagination-btn" for="slider-3" tabindex="0">
+                  <span class="visually-hidden">3 товар</span>
+                </label>
+              </li>
+            </ol>
+          </div>
+          </div>
         <dl class="slider-card__feature">
           <div class="slider-card__feature-item">
             <dt>800 м</dt>
@@ -181,9 +200,28 @@
             пропускать занятия и соблюдать диету.
           </dd>
         </dl>
-
+        <div class="sliderinfo1">
         <a class="slider-card__link btn" href="#">Подробнее</a>
-
+        <div class="product-slider__nav">
+          <ol class="product-slider__pagination">
+            <li class="product-slider__pagination-item">
+              <label class="product-slider__pagination-btn" for="slider-1" tabindex="0">
+                <span class="visually-hidden">1 товар</span>
+              </label>
+            </li>
+            <li class="product-slider__pagination-item">
+              <label class="product-slider__pagination-btn" for="slider-2" tabindex="0">
+                <span class="visually-hidden">2 товар</span>
+              </label>
+            </li>
+            <li class="product-slider__pagination-item">
+              <label class="product-slider__pagination-btn" for="slider-3" tabindex="0">
+                <span class="visually-hidden">3 товар</span>
+              </label>
+            </li>
+          </ol>
+        </div>
+        </div>
         <dl class="slider-card__feature">
           <div class="slider-card__feature-item">
             <dt>48 часов</dt>
@@ -215,9 +253,28 @@
             (Восемь, Карл!) метров длиной и весом всего 5 кг.
           </dd>
         </dl>
-
-        <a class="slider-card__link btn" href="#">Подробнее</a>
-
+        <div class="sliderinfo1">
+          <a class="slider-card__link btn" href="#">Подробнее</a>
+          <div class="product-slider__nav">
+            <ol class="product-slider__pagination">
+              <li class="product-slider__pagination-item">
+                <label class="product-slider__pagination-btn" for="slider-1" tabindex="0">
+                  <span class="visually-hidden">1 товар</span>
+                </label>
+              </li>
+              <li class="product-slider__pagination-item">
+                <label class="product-slider__pagination-btn" for="slider-2" tabindex="0">
+                  <span class="visually-hidden">2 товар</span>
+                </label>
+              </li>
+              <li class="product-slider__pagination-item">
+                <label class="product-slider__pagination-btn" for="slider-3" tabindex="0">
+                  <span class="visually-hidden">3 товар</span>
+                </label>
+              </li>
+            </ol>
+          </div>
+          </div>
         <dl class="slider-card__feature">
           <div class="slider-card__feature-item">
             <dt>8,5 м</dt>
@@ -235,7 +292,7 @@
       </div>
     </section>
 
-    <div class="product-slider__nav">
+    <!--div class="product-slider__nav">
       <ol class="product-slider__pagination">
         <li class="product-slider__pagination-item">
           <label class="product-slider__pagination-btn" for="slider-1" tabindex="0">
@@ -253,7 +310,7 @@
           </label>
         </li>
       </ol>
-    </div>
+    </!--div-->
   </section>
 
   <section class="assortiment page-container">

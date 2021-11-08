@@ -225,7 +225,7 @@ body {
   background-color: #000000;
   border-color: #000000;
 }
-nav-user {
+.nav-user {
   flex-grow: 1;
   display: flex;
   align-items: center;
@@ -299,7 +299,7 @@ nav-user {
 .nav-user__link_out::before {
   content: none;
 }
-nav-user__link_enter::before {
+.nav-user__link_enter::before {
   background-image: url(../images/enter.svg);
 }
 .nav-user__link_compare::before {
@@ -357,18 +357,18 @@ nav-user__link_enter::before {
   text-decoration: none;
   outline: none;
 }
-popup-basket__item:last-child {
+.popup-basket__item:last-child {
   border: none;
 }
-popup-basket__img {
+.popup-basket__img {
   display: block;
   margin-right: 23px;
 }
-popup-basket__img {
+.popup-basket__img {
   display: block;
   margin-right: 23px;
 }
-popup-basket__text {
+.popup-basket__text {
   align-self: center;
   width: 180px;
   margin: 0;
@@ -408,7 +408,7 @@ popup-basket__text {
   border: 2px solid #af4fff;
   border-radius: 50%;
 }
-popup-basket__link:focus .popup-basket__img {
+.popup-basket__link:focus .popup-basket__img {
   outline: 5px solid #af4fff;
 }
 .popup-basket__link:focus .popup-basket__text {
@@ -578,7 +578,7 @@ main-nav__catalog {
 }
 .main-nav__item_catalog:hover .main-nav__catalog::after {
   opacity: 1;
-  background-image: url(../images//minus.svg);
+  background-image: url(../images/minus.svg);
 }
 .main-nav__catalog:active {
   opacity: 0.3;
@@ -1265,10 +1265,11 @@ sub-nav__link {
     transparent
   );
 }
-/* Dont look at me*/
-#slider-1:checked ~ .slider-card:nth-of-type(1),
-#slider-2:checked ~ .slider-card:nth-of-type(2),
-#slider-3:checked ~ .slider-card:nth-of-type(3) {
+
+/* slider part fix on JS*/
+.slide1:checked ~ .slider-card:nth-of-type(1),
+.slide2:checked ~ .slider-card:nth-of-type(2),
+.slide3:checked ~ .slider-card:nth-of-type(3) {
   display: flex;
 }
 .slider-card__galery {
@@ -1398,10 +1399,12 @@ sub-nav__link {
   padding: 0;
   font-size: 16px;
 }
+*
 .product-slider__nav {
-  position: absolute;
+  margin-left: auto;
   right: 38px;
   top: 365px;
+
 }
 .product-slider__pagination {
   display: flex;
@@ -1409,6 +1412,11 @@ sub-nav__link {
   margin: 0;
   padding: 0;
   list-style: none;
+  padding: 14px 21px 0 0;
+
+}
+.active {
+  background-color: #000000;
 }
 .product-slider__pagination-item {
   margin-right: 22px;
@@ -1425,11 +1433,7 @@ sub-nav__link {
   cursor: pointer;
 }
 /* Dont look at me*/
-#slider-1:checked ~ .product-slider__nav label[for="slider-1"],
-#slider-2:checked ~ .product-slider__nav label[for="slider-2"],
-#slider-3:checked ~ .product-slider__nav label[for="slider-3"] {
-  background-color: #000000;
-}
+
 .product-slider__pagination-btn:focus {
   outline: none;
   border: 2px solid #af4fff;
@@ -1440,6 +1444,11 @@ sub-nav__link {
 .product-slider__pagination-btn:active {
   border: 2px solid rgba(0, 0, 0, 0.3);
 }
+.checked-paganation {
+background-color: #000000;
+
+}
+
 /*CATEGORY*/
 .assortiment {
   margin-bottom: 81px;
@@ -1557,6 +1566,9 @@ sub-nav__link {
   position: relative;
   top: -74px;
 }
+.services-btn {
+  cursor: pointer;
+}
 .service-menu {
   position: relative;
   width: 284px;
@@ -1564,7 +1576,15 @@ sub-nav__link {
   margin-top: 50px;
   padding: 0;
   padding-top: 5px;
+
 }
+.sliderinfo1 {
+   display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: .5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". ."; }
 .service-menu::after {
   position: absolute;
   content: "";
@@ -1647,16 +1667,16 @@ sub-nav__link {
 .service-item-3 p {
   width: 420px;
 }
-#s-btn-1:checked ~ .service-menu label[for="s-btn-1"],
-#s-btn-2:checked ~ .service-menu label[for="s-btn-2"],
-#s-btn-3:checked ~ .service-menu label[for="s-btn-3"] {
+.btn-1:checked ~ .service-menu label[for="s-btn-1"],
+.btn-2:checked ~ .service-menu label[for="s-btn-2"],
+.btn-3:checked ~ .service-menu label[for="s-btn-3"] {
   padding-right: 124px;
   color: #f7e184;
   background-color: #000000;
 }
-#s-btn-1:checked ~ .service-list .service-item-1,
-#s-btn-2:checked ~ .service-list .service-item-2,
-#s-btn-3:checked ~ .service-list .service-item-3 {
+.btn-1:checked ~ .service-list .service-item-1,
+.btn-2:checked ~ .service-list .service-item-2,
+.btn-3:checked ~ .service-list .service-item-3 {
   display: block;
 }
 .service-menu-item:hover {
@@ -2305,16 +2325,22 @@ a.breadcrumbs__link:active::before {
 .checkbox-control__input:focus ~ .checkbox-control__mark svg {
   fill: #af4fff;
 }
-.checkbox-control__input:hover ~ .checkbox-control__label,
-.checkbox-control__input:hover ~ .checkbox-control__mark,
-.checkbox-control__input:hover ~ .checkbox-control__mark svg {
+.checkbox-control__input:hover ~ .checkbox-control__label {
   opacity: 0.5;
 }
+.checkbox-control__input:hover ~ .checkbox-control__mark{
+  opacity: 0.5;
+}
+.checkbox-control__input:hover ~ .checkbox-control__mark svg {
+  opacity: 0.9;
+}
+
 .checkbox-control__input:active ~ .checkbox-control__label,
 .checkbox-control__input:active ~ .checkbox-control__mark,
 .checkbox-control__input:active ~ .checkbox-control__mark svg {
   opacity: 0.2;
 }
+
 .control-radio {
   position: relative;
   display: block;
@@ -2367,10 +2393,14 @@ a.breadcrumbs__link:active::before {
 .control-radio__input:focus ~ .control-radio__mark::before {
   background-color: #af4fff;
 }
-.contrl-radio__input:hover ~ .control-radio__label,
-.control-radio__input:hover ~ .control-radio__mark,
-.control-radio__input:hover ~ .control-radio__mark::before {
+.contrl-radio__input:hover ~ .control-radio__label{
   opacity: 0.5;
+}
+.control-radio__input:hover ~ .control-radio__mark {
+  opacity: 0.5;
+}
+.control-radio__input:hover ~ .control-radio__mark::before {
+  opacity: 0.8;
 }
 .control-radio__input:active ~ .control-radio__label,
 .control-radio__input:active ~ .control-radio__mark,
@@ -2589,7 +2619,7 @@ a.breadcrumbs__link:active::before {
   display: block;
   width: 60px;
   height: 60px;
-  background-image: url(../images/products/new.svg);
+  background-image: url(../images/new.svg);
 }
 .product-card__picture::before {
   position: absolute;
@@ -2772,7 +2802,7 @@ a.pagination__link:active {
 .modal-wrapper_disabled {
   display: none;
 }
-/*Model*/
+/*Modal*/
 .modal-wrapper {
   position: fixed;
   width: 100%;
@@ -2836,7 +2866,7 @@ a.pagination__link:active {
 .delivery-form__item_name .form-input__wrapper::before {
   width: 13px;
   height: 12px;
-  background-image: url(../images/modal_window/user.svg);
+  background-image: url(../images/user.svg);
 }
 .delivery-form__item_email {
   grid-column: 3 / -1;
@@ -2844,7 +2874,7 @@ a.pagination__link:active {
 .delivery-form__item_email .form-input__wrapper::before {
   width: 15px;
   height: 12px;
-  background-image: url(../images/modal_window/mail-1.svg);
+  background-image: url(../images/mail-1.svg);
 }
 .delivery-form__item_product {
   grid-column: 1 / -2;
@@ -2914,7 +2944,7 @@ a.pagination__link:active {
   position: relative;
   width: 26px;
   height: 26px;
-  background-image: url(../images/icon/tooltip.svg);
+  background-image: url(../images/tooltip.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -2979,12 +3009,12 @@ a.pagination__link:active {
 .form-counter__btn_minus::before {
   width: 16px;
   height: 2px;
-  background-image: url(../images/modal_window/minus.svg);
+  background-image: url(../images/minus.svg);
 }
 .form-counter__btn_plus::before {
   width: 16px;
   height: 16px;
-  background-image: url(../images/modal_window/plus.svg);
+  background-image: url(../images/plus-modal.svg);
 }
 .form-counter__btn:focus::after {
   position: absolute;
