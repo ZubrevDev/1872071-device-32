@@ -661,7 +661,6 @@ sub-nav__link {
   color: #444444;
 }
 
-
 .main {
   flex-grow: 1;
 }
@@ -1399,12 +1398,10 @@ sub-nav__link {
   padding: 0;
   font-size: 16px;
 }
-*
-.product-slider__nav {
+* .product-slider__nav {
   margin-left: auto;
   right: 38px;
   top: 365px;
-
 }
 .product-slider__pagination {
   display: flex;
@@ -1413,7 +1410,6 @@ sub-nav__link {
   padding: 0;
   list-style: none;
   padding: 14px 21px 0 0;
-
 }
 .active {
   background-color: #000000;
@@ -1445,8 +1441,7 @@ sub-nav__link {
   border: 2px solid rgba(0, 0, 0, 0.3);
 }
 .checked-paganation {
-background-color: #000000;
-
+  background-color: #000000;
 }
 
 /*CATEGORY*/
@@ -1557,10 +1552,10 @@ background-color: #000000;
 }
 .service {
   position: relative;
-    margin-bottom: 90px;
-    padding-bottom: 36px;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin-top: 102px;
+  margin-bottom: 90px;
+  padding-bottom: 36px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 102px;
 }
 .service .index-column {
   position: relative;
@@ -1576,15 +1571,14 @@ background-color: #000000;
   margin-top: 50px;
   padding: 0;
   padding-top: 5px;
-
 }
 .sliderinfo1 {
-   display: grid;
+  display: grid;
   grid-template-columns: 220px 1fr;
-  grid-template-rows: .5fr;
+  grid-template-rows: 0.5fr;
   gap: 0px 0px;
-  grid-template-areas:
-    ". ."; }
+  grid-template-areas: ". .";
+}
 .service-menu::after {
   position: absolute;
   content: "";
@@ -2256,7 +2250,6 @@ a.breadcrumbs__link:active::before {
   border: none;
   -moz-appearance: textfield;
 }
-
 .range-inputs__input::-webkit-outer-spin-button,
 .range-inputs__input::-webkit-inner-spin-button {
   appearance: none;
@@ -2328,7 +2321,7 @@ a.breadcrumbs__link:active::before {
 .checkbox-control__input:hover ~ .checkbox-control__label {
   opacity: 0.5;
 }
-.checkbox-control__input:hover ~ .checkbox-control__mark{
+.checkbox-control__input:hover ~ .checkbox-control__mark {
   opacity: 0.5;
 }
 .checkbox-control__input:hover ~ .checkbox-control__mark svg {
@@ -2393,7 +2386,7 @@ a.breadcrumbs__link:active::before {
 .control-radio__input:focus ~ .control-radio__mark::before {
   background-color: #af4fff;
 }
-.contrl-radio__input:hover ~ .control-radio__label{
+.contrl-radio__input:hover ~ .control-radio__label {
   opacity: 0.5;
 }
 .control-radio__input:hover ~ .control-radio__mark {
@@ -3047,11 +3040,9 @@ a.pagination__link:active {
   outline: none;
   -moz-appearance: textfield;
 }
-
 .form-counter__input::-webkit-inner-spin-button {
   display: none;
 }
-
 .delivery-form__btn {
   width: 200px;
   height: 50px;
@@ -3357,4 +3348,3 @@ a.pagination__link:active {
   line-height: 48px;
   letter-spacing: 0.5px;
 }
-
