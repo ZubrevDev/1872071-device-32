@@ -505,8 +505,7 @@ main-nav {
 }
 
 .main-nav__item:last-child {
-  margin-right: 0;
-}
+  margin-right: -4px;}
 
 .main-nav__item_catalog {
   width: 500px;
@@ -527,6 +526,7 @@ main-nav {
   text-decoration: none;
   color: #000000;
   outline: none;
+
 }
 .main-nav__link:focus::before {
   position: absolute;
@@ -1108,6 +1108,8 @@ sub-nav__link {
 }
 .main-nav__item_cont {
   margin-left: auto;
+  margin-right: -5px;
+
 }
 .main-nav__link {
   position: relative;
@@ -3365,4 +3367,10 @@ a.pagination__link:active {
 }
 .pix-fix2 {
   margin-left: -13px;
+}
+.logo-academy {
+  padding-top: 2px;
+}
+.nav-user__item_out {
+  margin-left: 2px;
 }
