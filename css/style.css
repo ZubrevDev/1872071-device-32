@@ -2,28 +2,28 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
-  src: url("/fonts/raleway/raleway-800.woff2") format("woff2");
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/rubik/rubik-400.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/rubik/rubik-700.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 800;
-  src: url("/fonts/rubik/rubik-800.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
   font-display: swap;
 }
 html {
@@ -3284,6 +3284,9 @@ a.pagination__link:active {
   font-size: 16px;
   line-height: 19px;
   display: flex-end;
+}
+.footer-nav__item {
+margin: 0 0 8px 5px
 }
 .site-navigation {
   font-family: "Rubik", Arial, sans-serif;
