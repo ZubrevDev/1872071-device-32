@@ -22,7 +22,7 @@
   font-display: swap;
 }
 
- @font-face {
+@font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 800;
@@ -3143,9 +3143,11 @@ a.pagination__link:active {
   padding-right: 20px;
 }
 .footer-address__text {
+  font-family: "Rubik", "Arial", sans-serif;
+  font-weight: normal;
+  line-height: 19px;
   margin: 0;
   font-size: 16px;
-  line-height: 19px;
   font-style: normal;
   color: #ffffff;
   padding-right: 65px;
@@ -3206,6 +3208,7 @@ a.pagination__link:active {
   text-decoration: none;
   color: #ffffff;
   outline: none;
+  margin-bottom: 6px;
 }
 .footer-contacts-phone:focus:before {
   position: absolute;
@@ -3290,7 +3293,7 @@ a.pagination__link:active {
   display: flex-end;
 }
 .footer-nav__item {
-margin: 0 0 8px 5px
+  margin: 0 0 8px 5px;
 }
 .site-navigation {
   font-family: "Rubik", Arial, sans-serif;
@@ -3354,4 +3357,12 @@ margin: 0 0 8px 5px
   font-size: 47px;
   line-height: 48px;
   letter-spacing: 0.5px;
+}
+/* pix-fix */
+
+.pix-fix {
+  margin-left: 3px;
+}
+.pix-fix2 {
+  margin-left: -13px;
 }
