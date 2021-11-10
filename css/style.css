@@ -1637,7 +1637,6 @@ sub-nav__link {
   display: none;
 }
 .service-item h3 {
-  margin-bottom: 30px;
   font-family: Raleway;
   font-style: normal;
   font-weight: 800;
@@ -3387,8 +3386,8 @@ a.pagination__link:active {
   margin-left: 2px;
 }
 .pix-fix-h3 {
-  margin-bottom: 34px;
-  margin-top: 42px;
+  margin-bottom: 33px;
+    margin-top: 42px;
 }
 
 
